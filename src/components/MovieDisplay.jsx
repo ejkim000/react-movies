@@ -13,7 +13,7 @@ function MovieDisplay({ movie }) {
           <Img src={movie.Poster} alt={movie.Title} />
 
           <Flex direction='column'>
-            <Title>{movie.Title}</Title>
+            <Title>{movie.Title}🍿</Title>
             <h2>{movie.Genre}</h2>
             <h3>Realeased: <em>{movie.Released}</em></h3>
             <h3>Country: <em>{movie.Country}</em></h3>
