@@ -17,6 +17,7 @@ function MovieDisplay({ movie }) {
             <h2>{movie.Genre}</h2>
             <h3>Realeased: <em>{movie.Released}</em></h3>
             <h3>Country: <em>{movie.Country}</em></h3>
+            <h3>Language: <em>{movie.Language}</em></h3>
             <h3>Director: <em>{movie.Director}</em></h3>
             <h3>Actors: <em>{movie.Actors}</em></h3>
             <h3>Rating: <em>{movie.imdbRating}</em></h3>
