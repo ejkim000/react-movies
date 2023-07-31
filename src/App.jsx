@@ -1,6 +1,19 @@
 import { useState, useEffect } from "react";
-import Form from "./components/Form";
+import { ThemeProvider } from 'styled-components';
+import Header from "./components/Header";
 import MovieDisplay from "./components/MovieDisplay";
+import Footer from "./components/Footer";
+import GlobalStyles from './components/styles/Global';
+
+const theme = {
+  colors: {
+    header: '#F03816',
+    body: '#eee',
+    footer: '#ddd'
+  },
+
+  mobile: '768px'
+}
 
 function App() {
 
@@ -20,14 +33,16 @@ function App() {
   }
 
   useEffect(() => {
-    getMovie("Encanto")
+    getMovie("Train to Busan")
   }, [])
 
   return (
-    <div>
-      <Form movieSearch={getMovie} />
-      <MovieDisplay movie={movie} />
-    </div>
+    <ThemeProvider theme={theme} >
+        <GlobalStyles />
+        <Header movieSearch={getMovie} />
+        <MovieDisplay movie={movie} />
+        <Footer />
+    </ThemeProvider>
   )
 }
 

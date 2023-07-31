@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Input, Button } from './styles/Header.styled';
 
 function Form({ movieSearch }) {
 
@@ -15,14 +16,16 @@ function Form({ movieSearch }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        e.target.value = '';
+        
         movieSearch(form.searchTerm);
     }
 
   return (
     <div>
         <form onSubmit={handleSubmit}>
-            <input type="text" value={form.searchTerm} onChange={handleChange} />
-            <input type="submit" value="submit" />
+            <Input type="text" value={form.searchTerm} onChange={handleChange} />
+            <Button> 🔍 </Button>
         </form>
     </div>
   )
