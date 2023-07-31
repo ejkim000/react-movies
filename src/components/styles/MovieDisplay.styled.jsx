@@ -8,7 +8,7 @@ export const Title = styled.h1`
 `
 
 export const Img = styled.img`
-    width: 45vw;
+    width: 40vw;
     margin-right: 40px;
 
     @media (max-width: ${({ theme }) => theme.mobile}) {
