@@ -20,17 +20,21 @@ export const Nav = styled.nav`
 
 export const Logo = styled.div`
     font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 2.4em;
+    font-size: 2.5em;
     font-weight: 600;
     color: #fff;
     text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
     margin: 15px 5px;
+
+    @media(max-width: ${({ theme }) => theme.mobile}) {
+        font-size: 9vw;
+    }
 `
 
 export const Input = styled.input`
     border-radius: 4px;
     border: none;
-    width: 10em;
+    width: 18vw;
     font-size: 1.5em;
     color: ${({theme}) => theme.colors.header};
     margin: 15px 5px;
@@ -39,6 +43,10 @@ export const Input = styled.input`
 
     &:focus {
         outline: none;
+    }
+
+    @media(max-width: ${({ theme }) => theme.mobile}) {
+        width: 65vw;
     }
 `
 
