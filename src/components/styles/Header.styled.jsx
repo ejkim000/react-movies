@@ -9,6 +9,8 @@ export const Nav = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
 
     @media(max-width: ${({ theme }) => theme.mobile}) {
         flex-direction: column;
