@@ -20,7 +20,7 @@ export const Nav = styled.nav`
 
 export const Logo = styled.div`
     font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 30px;
+    font-size: 2.4em;
     font-weight: 600;
     color: #fff;
     text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
@@ -30,17 +30,23 @@ export const Logo = styled.div`
 export const Input = styled.input`
     border-radius: 4px;
     border: none;
-    font-size: 18px;
+    width: 10em;
+    font-size: 1.5em;
+    color: ${({theme}) => theme.colors.header};
     margin: 15px 5px;
-    padding: 5px;
+    padding: 7px;
     box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
+
+    &:focus {
+        outline: none;
+    }
 `
 
 export const Button = styled.button`
     border-radius: 4px;
     border: none;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1.5em;
     background-color: transparent;
     color: '#333';
     text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);

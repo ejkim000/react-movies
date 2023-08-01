@@ -7,14 +7,13 @@ export const Container = styled.div`
     margin: 0 auto;
 `
 export const Title = styled.h1`
-    font-size: 3em;
+    font-size: 2.7em;
 `
 export const Error = styled.h1`
     font-size: 3em;
     margin: 30px auto;
     text-align: center;
 `
-
 export const Img = styled.img`
     width: 50%;
     margin-right: 20px;
