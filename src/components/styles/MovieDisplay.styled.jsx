@@ -9,6 +9,11 @@ export const Container = styled.div`
 export const Title = styled.h1`
     font-size: 3em;
 `
+export const Error = styled.h1`
+    font-size: 3em;
+    margin: 30px auto;
+    text-align: center;
+`
 
 export const Img = styled.img`
     width: 50%;
