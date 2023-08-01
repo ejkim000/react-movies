@@ -34,7 +34,7 @@ export const Logo = styled.div`
 export const Input = styled.input`
     border-radius: 4px;
     border: none;
-    width: 18vw;
+    width: 10em;
     font-size: 1.5em;
     color: ${({theme}) => theme.colors.header};
     margin: 15px 5px;
